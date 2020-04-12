@@ -2,7 +2,7 @@
 
 ## Setup Instructions
 
-[TalkCards intro]: https://github.com/hungryjireh/codingpractice/blob/master/Python/talkcards/intro.png
+![TalkCards demo](https://github.com/hungryjireh/codingpractice/blob/master/Python/talkcards/intro.png "TalkCards demo")
 
 TalkCards is a simple, text-based game that encourages you to connect more deeply with the other party you are playing with. 
 
