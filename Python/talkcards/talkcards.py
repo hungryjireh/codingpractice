@@ -32,16 +32,14 @@ def print_card(test_string):
     final_card = "\n".join(card_array)
     return final_card
 
-csv_selection = True
-while csv_selection:
+try:
     end_round = input("\nKey in the path to your game file (.csv format): \n")
-    try:
-        all_cards = pd.read_csv(end_round).dropna()
-        card_categories = list(all_cards.columns.values)
-        game_choice = {i + 1:card_categories[i] for i in range(len(card_categories))}
-        csv_selection = False
-    except:
-        print("\nInvalid input; please try again.")
+    all_cards = pd.read_csv(end_round).dropna()
+except:
+    print("\nInvalid input. Default question set from questions.csv will be used.")
+    all_cards = pd.read_csv("questions.csv").dropna()
+card_categories = list(all_cards.columns.values)
+game_choice = {i + 1:card_categories[i] for i in range(len(card_categories))}
 
 ongoing_game = True
 while ongoing_game:

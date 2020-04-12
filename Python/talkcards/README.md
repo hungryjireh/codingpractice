@@ -6,6 +6,8 @@ TalkCards is a simple, text-based game that encourages you to connect more deepl
 
 Create your own questions just by editing questions.csv or by creating a new .csv file! You can create new questions, create new categories, or change and remove entries as you like.
 
+Whether you ask the person who "draws" the card to share on the question they'd received, or if you prefer to go around and hear everybody's thoughts on the question, how you choose to play this game is entirely up to you.
+
 Share your terminal screen during video calls to get started!
 
 ## Sample Game
