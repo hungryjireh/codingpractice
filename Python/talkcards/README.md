@@ -2,13 +2,19 @@
 
 ## Setup Instructions
 
-![TalkCards demo](https://github.com/hungryjireh/codingpractice/blob/master/Python/talkcards/intro.png "TalkCards demo")
-
 TalkCards is a simple, text-based game that encourages you to connect more deeply with the other party you are playing with. 
 
 Create your own questions just by editing questions.csv or by creating a new .csv file! You can create new questions, create new categories, or change and remove entries as you like.
 
 Share your terminal screen during video calls to get started!
 
+## Sample Game
+
+![TalkCards demo](https://github.com/hungryjireh/codingpractice/blob/master/Python/talkcards/intro.png "TalkCards demo")
+
 ## Dependencies
 - Pandas
+
+## Credits
+- Inspired by the brilliant [We're Not Really Strangers](https://www.werenotreallystrangers.com/) card game by [Koreen](https://www.instagram.com/koreen/).
+- Questions by the [Bored? Here are 115 thought provoking questions to tickle your mind](https://hackspirit.com/thought-provoking-questions/) article by HackSpirit.
