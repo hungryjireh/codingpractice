@@ -43,25 +43,24 @@ game_choice = {i + 1:card_categories[i] for i in range(len(card_categories))}
 
 ongoing_game = True
 while ongoing_game:
-    while ongoing_game:
-        print("\nGame categories: ")
-        for key, val in game_choice.items():
-            print(str(key) + ": " + str(val))
-        user_input = input("\nSelect a category by entering the corresponding number or type 'q' to quit: \n")
-        if user_input == 'q':
-            print("\nHope you had a meaningful time connecting!")
-            ongoing_game = False
-        else:
-            try:
-                selected_category = game_choice[int(user_input)]
-                print("\nCategory [" + str(game_choice[int(user_input)]) + "] selected. \n")
-                category_cards = list(all_cards[selected_category])
-                random_card = random.choice(category_cards)
-                print(print_card(random_card))
-                ongoing_round = True
-                while ongoing_round:
-                    end_round = input("\nPress 'n' to move on to the next round.\n")
-                    if end_round == 'n':
-                        ongoing_round = False
-            except:
-                print("Invalid input; please try again.")
+    print("\nGame categories: ")
+    for key, val in game_choice.items():
+        print(str(key) + ": " + str(val))
+    user_input = input("\nSelect a category by entering the corresponding number or type 'q' to quit: \n")
+    if user_input == 'q':
+        print("\nHope you had a meaningful time connecting!")
+        ongoing_game = False
+    else:
+        try:
+            selected_category = game_choice[int(user_input)]
+            print("\nCategory [" + str(game_choice[int(user_input)]) + "] selected. \n")
+            category_cards = list(all_cards[selected_category])
+            random_card = random.choice(category_cards)
+            print(print_card(random_card))
+            ongoing_round = True
+            while ongoing_round:
+                end_round = input("\nPress 'n' to move on to the next round.\n")
+                if end_round == 'n':
+                    ongoing_round = False
+        except:
+            print("Invalid input; please try again.")
